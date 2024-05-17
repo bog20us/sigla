@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Crează un nou fișier JSON pentru metadate
+cat <<EOF >metadata_ODT.json
+{
+  "name": "ODT",
+  "symbol": "ODT",
+  "description": "Token for funding ecological dome houses covered with grass.",
+  "image": "https://arweave.net/h1UT-5QtWDwVxmIT-KgXCAQrcntxeMtO5M2XsbNBTKo",
+  "attributes": [
+    {"trait_type": "Base", "value": "Station"},
+    {"trait_type": "Eco Value", "value": "High"}
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "https://arweave.net/h1UT-5QtWDwVxmIT-KgXCAQrcntxeMtO5M2XsbNBTKo",
+        "type": "image/png"
+      }
+    ],
+    "category": "image",
+    "creators": [
+      {
+        "address": "6cGt9qNLyZT35QoimY1jqZujBLWP32mMHDCSHBdBDjcn",
+        "share": 100
+      }
+    ]
+  }
+}
+EOF
+
+echo "Metadatele ODT au fost create cu succes."
